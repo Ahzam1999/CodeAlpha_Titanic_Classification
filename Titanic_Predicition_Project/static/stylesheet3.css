@@ -1,0 +1,27 @@
+/* styles.css */
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 10px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.result {
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+}

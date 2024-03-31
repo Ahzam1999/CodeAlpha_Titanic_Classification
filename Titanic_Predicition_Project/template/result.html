@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Survival Prediction Result</title>
+    <link rel="stylesheet" href="{% static 'C:\\data science\\CodeAlpha\\Titanic_Predicition_Project\\Titanic_Predicition_Project\\static\\stylesheet2.css' %}">
+     <style>
+        body {
+            background-image: url("{% static 'C:\\data science\\CodeAlpha\\Titanic_Predicition_Project\\Titanic_Predicition_Project\\static\\2.jpg' %}");
+            background-size: cover; /* Ensure the background image covers the entire container */
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            margin: 40px; /* Remove default margin */
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+        
+            
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .result {
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin: 0;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Titanic Survival Prediction Result</h1>
+        <div class="result">
+            <p>The model predicts: {{ prediction }}</p>
+        </div>
+    </div>
+</body>
+</html>

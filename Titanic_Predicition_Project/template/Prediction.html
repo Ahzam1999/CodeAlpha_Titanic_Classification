@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Survival Prediction</title>
+    <link rel="stylesheet" href="{% static 'C:\\data science\\CodeAlpha\\Titanic_Predicition_Project\\Titanic_Predicition_Project\\static\\stylesheet2.css' %}">
+
+    <style>
+        body {
+            background-image: url("{% static 'C:\\data science\\CodeAlpha\\Titanic_Predicition_Project\\Titanic_Predicition_Project\\static\\3.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            /* Add additional styling for the container if needed */
+        }
+    </style></head>
+<body>
+    <div class="container">
+        <h1>Titanic Survival Prediction</h1>
+        <form action="{% url 'predict' %}" method="post">
+            {% csrf_token %}
+            <label for="Pclass">Passenger Class:</label><br>
+            <select id="Pclass" name="Pclass" required>
+                <option value="1">1st Class</option>
+                <option value="2">2nd Class</option>
+                <option value="3">3rd Class</option>
+            </select><br>
+            
+            <label for="Sex">Sex:</label><br>
+            <select id="Sex" name="Sex" required>
+                <option value=1>Male</option>
+                <option value=0>Female</option>
+            </select><br>
+            
+            <label for="Age">Age:</label><br>
+            <input type="number" id="Age" name="Age" min="0" required><br>
+
+            <label for="SibSp">Number of Siblings/Spouses Aboard:</label><br>
+            <input type="number" id="SibSp" name="SibSp" min="0" required><br>
+
+            <label for="Parch">Number of Parents/Children Aboard:</label><br>
+            <input type="number" id="Parch" name="Parch" min="0" required><br>
+
+            <label for="Fare">Fare:</label><br>
+            <input type="number" id="Fare" name="Fare" min="0" step="0.01" required><br>
+
+            <label for="Embarked">Port of Embarkation:</label><br>
+            <select id="Embarked" name="Embarked" required>
+                <option value=0>Cherbourg</option>
+                <option value=1>Queenstown</option>
+                <option value=2>Southampton</option>
+            </select><br>
+            
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>

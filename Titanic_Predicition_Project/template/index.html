@@ -1,0 +1,31 @@
+<!-- templates/home.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Survival Prediction</title>
+    <link rel="stylesheet" href="{% static 'C:\\data science\\CodeAlpha\\Titanic_Predicition_Project\\Titanic_Predicition_Project\\static\\stylesheet1.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'C:\\data science\\CodeAlpha\\Titanic_Predicition_Project\\Titanic_Predicition_Project\\static\\1.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            /* Add additional styling for the container if needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div class="container">
+            <h1>Titanic Survival Prediction</h1>
+            <p>Welcome to the Titanic Survival Prediction app. Enter passenger details to predict survival chances.</p>
+            <a href="{% url 'predict' %}" class="btn">Predict Survival</a>
+        </div>
+    </div>
+</body>
+</html>

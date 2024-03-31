@@ -1,0 +1,44 @@
+/* static/css/style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    background-image: url('C:\\data science\\CodeAlpha\\Titanic_Predicition_Project\\Titanic_Predicition_Project\\static\\1.jpg'); /* Adjust the path as per your file structure */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the height to cover the entire viewport */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
